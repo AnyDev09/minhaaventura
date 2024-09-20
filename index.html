@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Missão Intergaláctica</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card ativo" id="passo-0">
+            <h1>Missão Intergaláctica</h1>
+            <p>Você é um explorador em uma missão para desvendar os segredos de uma galáxia distante. Uma mensagem enigmática chegou até você, e a aventura começa agora!</p>
+            <button class="btn-proximo" data-proximo="1">Preparar a nave</button>
+            <button class="btn-proximo" data-proximo="2">Decifrar a mensagem</button>
+        </div>
+
+        <div class="card" id="passo-1">
+            <p>Preparando sua nave, você deve escolher entre duas rotas: a segura ou a arriscada.</p>
+            <button class="btn-proximo" data-proximo="3">Rota segura</button>
+            <button class="btn-proximo" data-proximo="4">Rota arriscada</button>
+        </div>
+
+        <div class="card" id="passo-2">
+            <p>A mensagem revela a existência de um planeta com tecnologia avançada. Você decide:</p>
+            <button class="btn-proximo" data-proximo="5">Viajar até o planeta</button>
+            <button class="btn-proximo" data-proximo="6">Ignorar a mensagem</button>
+        </div>
+
+        <div class="card" id="passo-3">
+            <p>Na rota segura, você encontra uma tempestade de asteroides. O que fazer?</p>
+            <button class="btn-proximo" data-proximo="7">Desviar dos asteroides</button>
+            <button class="btn-proximo" data-proximo="8">Acelerar e passar rápido</button>
+        </div>
+
+        <div class="card" id="passo-4">
+            <p>A rota arriscada leva você a um buraco negro. Você decide explorar ou voltar.</p>
+            <button class="btn-proximo" data-proximo="9">Explorar o buraco negro</button>
+            <button class="btn-proximo" data-proximo="8">Voltar para a rota segura</button>
+        </div>
+
+        <div class="card" id="passo-5">
+            <p>Você chega ao planeta e é recebido por seres inteligentes que compartilham conhecimentos.</p>
+            <button class="btn-proximo" data-proximo="10">Aprender com eles</button>
+        </div>
+
+        <div class="card" id="passo-6">
+            <p>Decidindo ignorar a mensagem, você retorna à Terra, mas sente que perdeu uma grande oportunidade.</p>
+        </div>
+
+        <div class="card" id="passo-7">
+            <p>Você desvia dos asteroides com sucesso e continua sua jornada em segurança.</p>
+            <button class="btn-proximo" data-proximo="10">Prosseguir na missão</button>
+        </div>
+
+        <div class="card" id="passo-8">
+            <p>Infelizmente, a velocidade não foi suficiente e você colide com um asteroide. Fim da missão.</p>
+        </div>
+
+        <div class="card" id="passo-9">
+            <p>Explorar o buraco negro revela um novo universo, mas você precisa tomar cuidado para não se perder.</p>
+            <button class="btn-proximo" data-proximo="10">Aventurar-se no novo universo</button>
+        </div>
+
+        <div class="card" id="passo-10">
+            <p>Após a jornada, você retorna à Terra com novas descobertas e tecnologia revolucionária. A missão foi um sucesso!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

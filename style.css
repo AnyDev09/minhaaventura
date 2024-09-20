@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f0f20, #1e1e2f);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;  /* Ocupa mais espaço horizontal */
+    height: 90vh; /* Ocupa mais espaço vertical */
+    overflow-y: auto; /* Permite rolagem se necessário */
+}
+
+.card {
+    background: rgba(34, 34, 50, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Tamanho máximo */
+    margin: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+    display: none;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0; /* Inicialmente invisível */
+}
+
+.card.ativo {
+    display: block;
+    transform: translateY(0);
+    opacity: 1; /* Visível quando ativo */
+    animation: fadeIn 0.5s forwards; /* Animação de entrada */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+button {
+    background: linear-gradient(90deg, #00adb5, #007c7f);
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #00969d, #005f5f);
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95vw; /* Mais responsivo em telas menores */
+    }
+}
